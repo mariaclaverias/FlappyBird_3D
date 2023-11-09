@@ -4,15 +4,29 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private Rigidbody rb;
+
+    private void Start()
     {
-        
+        rb.GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        PlayerMove();
+    }
+
+    public void PlayerMove()
+    {
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+
+            if (touch.phase == TouchPhase.Began)
+            {
+                rb.AddForce(Vector3.up, ForceMode.Impulse);
+                Debug.Log("Saltar");
+            }
+        }
     }
 }
