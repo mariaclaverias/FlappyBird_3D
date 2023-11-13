@@ -21,19 +21,22 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Bird
-  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+  m_Shader: {fileID: 4800000, guid: 2706b0dc0422f8343bb0d9374d22a972, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap:
-    RenderType: Opaque
+  stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_E0E90B4F:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _AlphaTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -104,9 +107,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - Vector1_533C9C05: 0.4
+    - Vector1_911421B8: 0.1
+    - Vector1_A7207CA3: 3
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
+    - _CellShading: 251
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
     - _Cull: 2
@@ -121,9 +128,13 @@ Material:
     - _GlossyReflections: 0
     - _Metallic: 0
     - _OcclusionStrength: 1
+    - _OutLineValue: 0.06
     - _Parallax: 0.005
+    - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
+    - _RimAmount: 0.597
+    - _RimThreshold: 0.212
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -132,10 +143,15 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
+    - Color_5DF75355: {r: 0, g: 0, b: 0, a: 0}
+    - _AmbientColor: {r: 0.32555768, g: 0.22358489, b: 0.5, a: 1}
     - _BaseColor: {r: 0.8235295, g: 0.7490196, b: 0.14901961, a: 1}
-    - _Color: {r: 0.8235295, g: 0.7490196, b: 0.14901961, a: 1}
+    - _Color: {r: 0.8301887, g: 0.68307626, b: 0.3947312, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _OutLineColor: {r: 0.27058825, g: 0.15294118, b: 0.19607845, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+    - _RimColor: {r: 1.710384, g: 1.710384, b: 1.710384, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+    - _SpecularColor: {r: 0.023406863, g: 0.023406863, b: 0.023406863, a: 1}
   m_BuildTextureStacks: []

@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
-{
+{   
+    [SerializeField]
+    private float jumpForce;
     private Rigidbody rb;
 
     private void Start()
     {
-        rb.GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
     }
 
     private void Update()
@@ -24,8 +26,7 @@ public class PlayerInput : MonoBehaviour
 
             if (touch.phase == TouchPhase.Began)
             {
-                rb.AddForce(Vector3.up, ForceMode.Impulse);
-                Debug.Log("Saltar");
+                rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             }
         }
     }
